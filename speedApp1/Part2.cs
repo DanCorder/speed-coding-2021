@@ -6,12 +6,12 @@ using Newtonsoft.Json;
 
 namespace speedApp1
 {
-    class Program
+    class Part2
     {
         private const string statsPath = @"d:\work\speed-coding-2021\input\1_pokemon_species_base_stats.json";
         private const string levelsPath = @"d:\work\speed-coding-2021\input\2_pokemon_level_cp_multipliers.json";
         private const string pokemonPath = @"d:\work\speed-coding-2021\input\3_rupert_pokemon.json";
-        static void MainPart2(string[] args)
+        public static void Run()
         {
             var statsByName = JsonConvert.DeserializeObject<List<PokemonStats>>(
                 File.ReadAllText(statsPath))
