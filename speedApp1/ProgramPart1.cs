@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace speedApp1
 {
-    class Program
+    class ProgramPart1
     {
         private const string FilePath = @"d:\work\speed-coding-2021\input\test.txt"; 
-        static void Main(string[] args)
+        static void MainPart1(string[] args)
         {
             Console.WriteLine("Hello World!");
             
