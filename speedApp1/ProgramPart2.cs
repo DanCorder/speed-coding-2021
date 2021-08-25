@@ -11,7 +11,7 @@ namespace speedApp1
         private const string statsPath = @"d:\work\speed-coding-2021\input\1_pokemon_species_base_stats.json";
         private const string levelsPath = @"d:\work\speed-coding-2021\input\2_pokemon_level_cp_multipliers.json";
         private const string pokemonPath = @"d:\work\speed-coding-2021\input\3_rupert_pokemon.json";
-        static void Main(string[] args)
+        static void MainPart2(string[] args)
         {
             var statsByName = JsonConvert.DeserializeObject<List<PokemonStats>>(
                 File.ReadAllText(statsPath))
